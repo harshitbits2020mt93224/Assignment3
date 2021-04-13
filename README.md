@@ -4,5 +4,5 @@ _Contributions by Harshita_
 - Pull Requests made to the following files:
 	* index.html
 	* Readme.md 
-	* Two Code Files: FileName1 and FileName2
+	* Two Code Files: User.java and ExpenseManagerImpl.java
 	
