@@ -106,7 +106,7 @@ public class ExpenseManagerImpl implements ExpenseManager {
 
 	public void printBalances(String userId, Entry<User, Double> userBalance) {
 		// TODO Auto-generated method stub
-		
+		System.out.println("Printing expense for UserId "+userId);
 		if (userBalance.getValue()!= 0) {
 			if (userBalance.getValue()<0) {
 				System.out.println(getUserMap().get(userId).getName()+" owes "+Math.abs(userBalance.getValue())+" to "+userBalance.getKey().getName());
