@@ -60,12 +60,15 @@ public class Main {
 
 		switch(splitType){
 			case "1":
+				// case to handle Equal input
 				createEqualExpense(expenseManager, scanner);
 				break;
 			case "2":
+				// case to handle Exact input
 				createExactExpense(expenseManager, scanner);
 				break;
-			case "3":
+			case "3":				
+				// case to handle Percent input
 				createPercentExpense(expenseManager, scanner);
 				break;
 			default:
