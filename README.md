@@ -5,4 +5,5 @@ _Contributions by Harshita_
 	* index.html
 	* Readme.md 
 	* Two Code Files: User.java and ExpenseManagerImpl.java
+	* Two Issues added : #1 and #2
 	
