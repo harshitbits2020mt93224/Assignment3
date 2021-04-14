@@ -9,6 +9,7 @@ import Modal.Split;
 import Modal.User;
 import enums.Group;
 
+// interface for expenseManager can be used wherever needed
 public interface ExpenseManager {
 	
 	Expense createExpense(Long id,Group type, double amount, User paidBy,long groupId, Date currentDate, List<Split> splits);
