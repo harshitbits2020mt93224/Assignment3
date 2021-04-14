@@ -114,6 +114,7 @@ public class Main {
 		double amountCheck = amountIndi;
 
 		splits.add(new ExactSplit(amountIndi,expenseManager.getUserMap().get(paidBy)));
+		// loop to scan numbers
 		for (int i = 1; i<noOfUsers; i++){
 			System.out.println("Participant "+(i+1));
 			System.out.println("Enter user id: ");
