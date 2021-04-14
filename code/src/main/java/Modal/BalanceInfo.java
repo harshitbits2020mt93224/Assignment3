@@ -30,6 +30,7 @@ public class BalanceInfo {
 	public Map<User, Map<User, Double>> getBalanceSheet() {
 		return balanceSheet;
 	}
+	// function to set balance
 	public void setBalanceSheet(Map<User, Map<User, Double>> balanceSheet) {
 		this.balanceSheet = balanceSheet;
 	}
