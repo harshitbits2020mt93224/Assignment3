@@ -15,4 +15,16 @@ public class NullChecker {
         else
             return false;
     }
+    
+      public static boolean isNull(Doubledbl str)
+    {
+  
+        // Compare the string with null
+        // using == relational operator
+        // and return the result
+        if (dbl == null)
+            return true;
+        else
+            return false;
+    }
 }
