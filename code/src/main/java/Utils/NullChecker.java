@@ -4,7 +4,7 @@ public class NullChecker {
 
  // Function to check if the String is Null
  
-    public static boolean isStringNull(String str)
+    public static boolean isNull(String str)
     {
   
         // Compare the string with null
@@ -15,7 +15,4 @@ public class NullChecker {
         else
             return false;
     }
-
-
-
 }
