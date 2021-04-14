@@ -15,6 +15,7 @@ public class User {
 		this.phone = phone;
 	}
 	public String getId() {
+		System.out.println("Printing Id from User.getId: "+id);
 		return id;
 	}
 	public void setId(String id) {
