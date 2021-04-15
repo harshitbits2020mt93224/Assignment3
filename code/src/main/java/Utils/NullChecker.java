@@ -16,7 +16,7 @@ public class NullChecker {
             return false;
     }
     
-      public static boolean isNull(Doubledbl str)
+      public static boolean isNull(Double str)
     {
   
         // Compare the string with null
