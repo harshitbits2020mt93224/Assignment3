@@ -19,7 +19,7 @@ public class NullChecker {
       public static boolean isNull(Double str)
     {
   
-        // Compare the strings with null
+        // Compare the Double with null
         // using == relational operator
         // and return the result
         if (dbl == null)
