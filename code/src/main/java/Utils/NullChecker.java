@@ -27,4 +27,16 @@ public class NullChecker {
         else
             return false;
     }
+    
+         public static boolean isNull(Long long)
+    {
+  
+        // Compare the Long with null
+        // using == relational operator
+        // and return the result
+        if (long == null)
+            return true;
+        else
+            return false;
+    }
 }
