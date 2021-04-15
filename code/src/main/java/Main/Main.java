@@ -19,7 +19,6 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
 		  ExpenseManager expenseService = new ExpenseManagerImpl();
 		  ExpenseManagerImpl expenseManager = new ExpenseManagerImpl();
 		  expenseService.addUser(new User("pradipta", "Pradipta Sarma", "pradiptasarma@outlook.com", "8133910729"));
@@ -31,6 +30,8 @@ public class Main {
 			while (true){
 				System.out.println("Select mode: Create Expense [1], Show Balance [2]");
 				String input = scanner.nextLine();
+				if(issNull(input))
+				{
 				switch (input){
 					case "1":
 						//new expense
@@ -41,6 +42,8 @@ public class Main {
 						break;
 				}
 			}
+				
+			}
 		}
 	
 	private static void viewBalance(ExpenseManagerImpl expenseManager, Scanner scanner) {
@@ -49,7 +52,6 @@ public class Main {
 		//TODO put check
 		expenseManager.showBalanceForUser(userId);
 	}
-	
 	private static void createExpense(ExpenseManagerImpl expenseManager, Scanner scanner) {
 		System.out.println("Choose split type:");
 		System.out.println("1. Equal");
@@ -163,5 +165,3 @@ public class Main {
 	}
 	
 	}
-
-
