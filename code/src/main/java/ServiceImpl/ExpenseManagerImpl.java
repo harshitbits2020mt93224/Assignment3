@@ -53,13 +53,7 @@ public class ExpenseManagerImpl implements ExpenseManager {
 
 	public void addExpense(Long id, Group type, double amount, String userId, long groupId, Date currentDate,
 			List<Split> splits) {
-		//BalanceInfo info = new BalanceInfo();
-	//	Map<String,User> tempUserMap = new HashMap<String,User>();
-		//Map<User, Map<User, Double>> balanceSheet = new HashMap<User, Map<User, Double>>();
-	//	tempUserMap.put(paidBy.getId(), paidBy);
-	//	balanceSheet.put(paidBy, new HashMap<User,Double>());
-	//.setUserMap(tempUserMap);
-	//	info.setBalanceSheet(balanceSheet);
+
 		List<Expense> expenses = new ArrayList<Expense>();
 		User paidBy = userMap.get(userId);
 		// TODO Auto-generated method stub
@@ -68,15 +62,11 @@ public class ExpenseManagerImpl implements ExpenseManager {
 		
 		for (Split split : newExpense.getSplits()) {
 			User paidTo = split.getUser();
-			//Map<User, Double> balances = info.getBalanceSheet().get(paidBy);
 			Map<User, Double> balances = balanceSheet.get(paidBy);
 			if(!balances.containsKey(paidTo))
 				balances.put(paidTo, 0.0);
-			
 			balances.put(paidTo, balances.get(paidTo)+split.getAmount());
-			//balances = info.getBalanceSheet().get(paidTo);
 			balances = balanceSheet.get(paidTo);
-			
 			if (!balances.containsKey(paidBy)) {
 				balances.put(paidBy, 0.0);
 			}
@@ -130,6 +120,11 @@ public class ExpenseManagerImpl implements ExpenseManager {
 
 	public void setUserMap(Map<String, User> userMap) {
 		this.userMap = userMap;
+	}
+	
+	public List<Expense> getExpenses (List<Expense> expenses)
+	{
+		this.expenses = expenses;
 	}
 
 }
